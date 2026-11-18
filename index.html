@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Udaan - Jobs & Careers</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#172554}
+header{background:#123b78;color:white;padding:22px 16px;text-align:center}
+header h1{margin:0;font-size:30px}
+header p{margin:8px 0 0;color:#dbeafe}
+nav{background:#092b59;padding:13px;text-align:center}
+nav a{color:white;text-decoration:none;margin:0 9px;font-size:14px}
+.hero{background:linear-gradient(120deg,#123b78,#2676c9);color:white;text-align:center;padding:40px 15px}
+.hero h2{font-size:28px;margin:0 0 12px}
+.hero p{margin:0 0 22px}
+.search{width:90%;max-width:450px;padding:14px;border:0;border-radius:8px;font-size:16px}
+.container{max-width:1000px;margin:auto;padding:20px 15px}
+h2.section{color:#123b78}
+.categories{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.category{background:white;padding:22px 10px;text-align:center;border-radius:10px;box-shadow:0 2px 8px #0001;font-weight:bold;color:#123b78}
+.jobs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}
+.job{background:white;padding:18px;border-radius:10px;box-shadow:0 2px 8px #0001}
+.job h3{margin-top:0;color:#123b78}
+.job p{color:#475569;font-size:14px}
+.job a{display:inline-block;background:#1763b5;color:white;padding:10px 15px;border-radius:6px;text-decoration:none}
+.note{background:#fff7df;padding:14px;border-radius:8px;font-size:14px;margin-top:15px}
+footer{background:#092b59;color:white;text-align:center;padding:25px 12px;margin-top:30px}
+@media(min-width:650px){.categories{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🚀 Career Udaan</h1>
+<p>Your Future, Our Mission</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#categories">Categories</a>
+<a href="#jobs">Latest Jobs</a>
+<a href="#about">About</a>
+</nav>
+
+<section class="hero" id="home">
+<h2>Find Your Dream Career</h2>
+<p>Latest Government Jobs & Recruitment Updates</p>
+<input class="search" id="search" placeholder="Search jobs..." oninput="searchJobs()">
+</section>
+
+<main class="container">
+
+<h2 class="section" id="categories">Explore Categories</h2>
+<div class="categories">
+<div class="category">🎓 12th Pass Jobs</div>
+<div class="category">🏛️ Government Jobs</div>
+<div class="category">📍 Rajasthan Jobs</div>
+<div class="category">🇮🇳 All India Jobs</div>
+</div>
+
+<h2 class="section" id="jobs">Latest Job Updates</h2>
+<div class="jobs" id="jobList">
+
+<div class="job">
+<h3>Rajasthan Government Jobs</h3>
+<p>Find recruitment notifications and eligibility details.</p>
+<a href="https://rsmssb.rajasthan.gov.in/" target="_blank">Official Website</a>
+</div>
+
+<div class="job">
+<h3>SSC Recruitment</h3>
+<p>Check official SSC recruitment notifications.</p>
+<a href="https://ssc.gov.in/" target="_blank">Official Website</a>
+</div>
+
+<div class="job">
+<h3>Railway Recruitment</h3>
+<p>Explore Railway recruitment announcements.</p>
+<a href="https://www.rrbcdg.gov.in/" target="_blank">Official Website</a>
+</div>
+
+<div class="job">
+<h3>India Post Jobs</h3>
+<p>Check India Post recruitment information.</p>
+<a href="https://indiapost.gov.in/" target="_blank">Official Website</a>
+</div>
+
+</div>
+
+<div class="note">
+<strong>Important:</strong> Always check the official notification for eligibility, dates, fees and application details. Verify vacancies before publishing updates.
+</div>
+
+<section id="about">
+<h2 class="section">About Career Udaan</h2>
+<p>Career Udaan helps students and job seekers discover government job opportunities, 12th pass vacancies and recruitment updates across Rajasthan and India.</p>
+</section>
+
+</main>
+
+<footer>
+<h3>Career Udaan 🚀</h3>
+<p>Your Future, Our Mission</p>
+<p>© 2026 Career Udaan. All rights reserved.</p>
+</footer>
+
+<script>
+function searchJobs(){
+let q=document.getElementById("search").value.toLowerCase();
+document.querySelectorAll(".job").forEach(job=>{
+job.style.display=job.innerText.toLowerCase().includes(q)?"block":"none";
+});
+}
+</script>
+</body>
+                                                        </html>
+
+                                                        
